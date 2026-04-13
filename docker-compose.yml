@@ -1,0 +1,18 @@
+services:
+  ncm-mcp:
+    build:
+      context: ..
+      dockerfile: ncm_mcp_server/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - X_CP_API_ID=${X_CP_API_ID}
+      - X_CP_API_KEY=${X_CP_API_KEY}
+      - X_ECM_API_ID=${X_ECM_API_ID}
+      - X_ECM_API_KEY=${X_ECM_API_KEY}
+      - NCM_API_TOKEN=${NCM_API_TOKEN}
+      - MCP_TRANSPORT=sse
+      - MCP_PORT=3000
+    # Option: Credentials via JSON file (uncomment below, comment out credential env vars above)
+    # volumes:
+    #   - ./credentials.json:/app/credentials.json:ro
