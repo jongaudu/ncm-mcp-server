@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.git/
+.github/
+.venv/
+*.egg-info/
+.DS_Store
+docker-compose.yml
+credentials.json
+credentials.example.json
+README.md
+LICENSE
