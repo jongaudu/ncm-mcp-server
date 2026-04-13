@@ -5,7 +5,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ncm_mcp_server/ ./ncm_mcp_server/
+COPY . ./ncm_mcp_server/
 
 EXPOSE 3000
 
