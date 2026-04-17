@@ -2,6 +2,8 @@
 
 An MCP (Model Context Protocol) server that wraps the Cradlepoint NCM API, exposing router management, monitoring, and configuration operations as MCP tools for AI assistants.
 
+![NCM MCP Server Demo](assets/demo.png)
+
 ## Prerequisites
 
 - Docker and Docker Compose
